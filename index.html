@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Workshop Basis Data</title>
+</head>
+<body>
+    <table class="table-top">
+        <tr>
+            <td>
+                <div class="form-password">
+                    <h1>No 1 Validasi Password</h1>
+                    <br>
+                    <br>
+                    <form onsubmit="return myfun()">
+                        <label>Password</label>
+                        <input class="input" name="password" type="password" id="password" value="">
+                        <br>
+                        <span style="color: red;" id="msg_password"></span>
+                        <br>
+                        <label for="confirm">Confirm Password</label>
+                        <input class="input" name="confirm" type="password" id="confirm_pass">
+                        <br>
+                        <span id="msg_confirm"></span>
+                        <br>
+                        <input class="btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </td>
+            <td>
+                <h1 style="text-align: center;">No 2 Inputan tersembunyi</h1>
+                <button id="txt_login" class="btn" onclick="btnLogin()">Login</button>
+                <div class="form-login" id="login_form">
+                    <form>
+                        <label for="">Email</label>
+                        <input class="input" type="email" id="password" value="">
+                        <br>
+                        <label for="">Password</label>
+                        <input class="input" type="password" id="confirm_pass">
+                        <br>
+                        <input class="btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <div class="calculator">
+        <h1>No 3 Program Kalkulator Sederhana</h1>
+    <form>
+        <label for="">Angka 1</label>
+        <input class="input" type="number" id="angka1" value="">
+        <br>
+        <label for="">Angka 2</label>
+        <input class="input" type="number" id="angka2">
+        <br>
+    </form>
+    <button class="btn" onclick="btnMul()">X</button>
+    <button class="btn" onclick="btnAdd()">+</button>
+    <button class="btn" onclick="btnSub()">-</button>
+    <button class="btn" onclick="btnDivide()">/</button>
+    <br>
+    <h3 style="color: green;" id="hasil">0</h3>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <table class="table-bottom">
+        <tr>
+            <td>
+                <div class="kecamatan">
+                    <h1>No 4 Input Kecamatan</h1>
+                    <select class="input" id="kecamatan" onchange="kecamatan()">
+                        <option value="">--pilih kecamatan--</option>
+                        <option>Kenjeran</option>
+                        <option>Tambaksari</option>
+                    </select>
+                    <div id="kelurahan">
+                        <select class="input">
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="date">
+                    <h1>No 5 Mengubah Format Tanggal</h1>
+                    <h2>Tanggal Hari ini : </h2>
+                    <p id="d_data"></p>
+                    <input class="btn" type="button" value="dd/mm/yyy" onclick="format(1)">
+                    <br><br>
+                    <input class="btn" type="button" value="mm/dd/yyyy" onclick="format(0)">
+                </div>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <br>
+    </table>
+    <script src="js/app.js"></script>
+</body>
+</html>

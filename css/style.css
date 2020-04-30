@@ -1,0 +1,96 @@
+@font-face {
+    font-family : Montserrat ;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+body {
+    font-family: Montserrat;
+    margin: 0;;
+}
+.form-login {
+    display: none;
+    padding: 125px;
+}
+
+.form-login input.btn {
+    float: right;
+}
+
+.calculator {
+    text-align: center;
+    color: #7f53ac;
+}
+
+.calculator input.input {
+    width: 15%;
+}
+
+.calculator button.btn {
+    width: 2.5%;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #6E72FC;
+    border-radius: 8px;
+}
+
+.btn {
+    width: 12%;
+    padding: 12px;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    color: white;
+    border: 1px #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-password {
+    padding: 125px;
+}
+
+.table-top {
+    padding: 20px;
+    background-color: #E1BEE7;
+    width: 100%;
+}
+
+.table-bottom {
+    padding: 20px;
+    color: #F3E5F5;
+    background-color: #9C27B0;
+    width: 100%;
+}
+
+.form-password input.btn {
+    float: right;
+}
+
+select.input {
+    background-color: white;
+    width: 100%;
+}
+
+.kecamatan {
+    float: left;
+    padding: 100px;
+}
+
+.date {
+    width: 50%;
+    margin: auto;
+}
+
+.date input.btn {
+    width: 25%;
+}
+
+.garis {
+    border: 2px #F3E5F5 solid; 
+    height: 250px; 
+    width: 0px;
+    align-content: center;
+}
